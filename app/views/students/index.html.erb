@@ -1,0 +1,14 @@
+<h1>Le Wagon Students</h1>
+<p>We have <%= @students_count %> students</p>
+
+
+<ul>
+	<% @students.each do |student| %>
+		<li><%= student %></li>
+	<% end %>
+</ul>
+
+
+<%= link_to 'Know more about us!', about_path %>
+
+<!-- about_path is a method from rails that is returning the path '/about' -->
